@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oilpalm3f.mainapp.cropmaintenance.WhiteFlyFragment"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusableInTouchMode="false"
+    android:background="@color/white">
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar_common">
+
+    </include>
+
+    <Button
+        android:id="@+id/eighteenBtn"
+        style="@style/moduleBtnStyle"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="2019 - 2020" />
+    <Button
+        android:id="@+id/ninteenBtn"
+        style="@style/moduleBtnStyle"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="2020 - 2021" />
+    <Button
+        android:id="@+id/currentBtn"
+        style="@style/moduleBtnStyle"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="2021 - 2022" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        style="@style/basicBtnStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/save" />
+
+
+
+</LinearLayout>

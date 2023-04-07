@@ -1,0 +1,99 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    tools:context="com.oilpalm3f.mainapp.cropmaintenance.SnapShotFragment">
+
+    <include layout="@layout/toolbar_common">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/margin_top_layout"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/header_h1_text_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/Last_Visited_Date" />
+
+        <TextView
+            android:id="@+id/lastVisitedDate_text"
+            style="@style/header_h1_text_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_top_layout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/header_h1_text_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/snap_shot_name" />
+
+        <TextView
+            android:id="@+id/prospectivePlots_text"
+            style="@style/header_h1_text_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary" />
+
+
+    <RelativeLayout
+        android:id="@+id/bdRLplotdetailslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bdRLplotdetails"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_farmerplotdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="1px">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
